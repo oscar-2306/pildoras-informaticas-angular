@@ -1,0 +1,35 @@
+<p>Nombre del empleado:{{nombre}}</p>
+<p>Apellido del empleado:{{apellido}}</p>
+<!-- <p>Edad del Empleado:{{edad +10}}</p> -->
+<p>Edad del empleado: {{edad<20 ? "menor de edad":"mayor de edad"}}</p> 
+<!-- <p>edad del empleado: {{getEdad()+10}}</p> -->
+ <p>Empresa:{{empresa.value}}</p>  para trabajar el bidimensional bidin--> 
+
+<!-- se realizara el biding bidimensional 
+<p>Empresa:{{empresa}}</p>
+
+introduce la empresa: <input type="text" [(ngModel)]="empresa"> -->
+
+<!-- se va a ingresar un input que modigique 
+la empresa  -->
+
+introduce la empresa: <input type="text" #empresa 
+(keyup)="0" [disabled]="habilitacioCuadro">
+<br>
+<br> 
+{{textoDeRegistro}}
+<br>
+<!--Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado" (click)="setUsuarioRegistrado()">-->
+
+Registrado: <input type="radio" value="si" name="nRegistro"id="registro" [checked]="usuRegistrado" (click)="setUsuarioRegistrado($event)">
+no registrado:<input type="radio" value="no"name="nRegistro"(click)="setUsuarioRegistrado($event)">
+<!-- <input type="button" value="DALE" (click)="llamaEmpresa(empresa.value)"/> -->
+
+<!-- se creara un event binding con el check 
+para cuando se active el check nos diga que se ha 
+registrado un usuario -->
+
+
+
+
+
